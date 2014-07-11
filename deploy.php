@@ -62,7 +62,7 @@ class Deploy {
 		}
 
 		try{
-			//$this->deleteTemp();
+			$this->deleteTemp();
 		}catch(Exception $e){
 			$this->wasError = true;
 			$this->errorMessage = $e->getMessage();
